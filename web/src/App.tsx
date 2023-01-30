@@ -1,11 +1,19 @@
-import { useState } from 'react'
+import init from './pkg/lib_simulation_wasm_bg.wasm?init'
+import { useState , useEffect } from 'react'
 import './App.css'
-import * as sim from './js/index'
+import './index.js'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+
+  useEffect(() =>  {
+    init().then((exports) => {
+
+    })
+  } , [])
 
   return (
+    <>
     <div id="container">
     <div id="terminal-panel" className="panel">
       <textarea id="terminal-stdout" ></textarea>
@@ -15,6 +23,7 @@ function App() {
       <canvas id="viewport"></canvas>
     </div>
   </div>
+    </>
   )
 }
 
