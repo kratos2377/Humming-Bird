@@ -1,15 +1,16 @@
-import init from './pkg/lib_simulation_wasm_bg.wasm?init'
 import { useState , useEffect } from 'react'
 import './App.css'
-import './index.js'
+// import init from './lib_simulation_wasm_bg.wasm?init'
+//  import './index.js'
 
 function App() {
 
 
   useEffect(() =>  {
-    init().then((exports) => {
-
-    })
+      const load = async () => {
+        await import('./index.js')
+      }
+    load()
   } , [])
 
   return (

@@ -2,7 +2,7 @@ import * as sim from "lib-simulation-wasm";
 import { Terminal } from "./js/app/terminal";
 import { Viewport } from "./js/app/viewport";
 
-/* ---------- */
+
 
 const terminal = new Terminal(
     document.getElementById("terminal-stdin"),
@@ -13,22 +13,13 @@ const viewport = new Viewport(
     document.getElementById("viewport"),
 );
 
-/**
- * Current simulation.
- *
- * @type {Simulation}
- */
+
 let simulation = new sim.Simulation(sim.Simulation.default_config());
 
-/**
- * Whether the simulation is working or not.
- * Can be modified by the `pause` command.
- *
- * @type {boolean}
- */
-let active = true;
 
-/* ---------- */
+let active = true;
+let bal = true;
+
 
 const config = simulation.config();
 
@@ -127,7 +118,7 @@ terminal.println("");
 terminal.println("----");
 terminal.scrollToTop();
 
-/* ---------- */
+
 
 terminal.onInput((input) => {
     terminal.println("");
@@ -230,8 +221,6 @@ function execTrain(args) {
         terminal.println(stats);
     }
 }
-
-/* ---------- */
 
 function redraw() {
     if (active) {
