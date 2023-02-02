@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.7",
     "lib-simulation-wasm": "file:../brain/libs/simulation-wasm/pkg",
     "react": "^18.2.0",

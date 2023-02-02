@@ -1,0 +1,63 @@
+#ter-panel{
+    display: flex;
+    flex-direction: column;
+}
+.panel {
+    display: flex;
+    padding: 1em;
+  }
+
+  #terminal-stdout {
+    flex-grow: 1;
+    border-bottom: none;
+  }
+  
+  #viewport-panel {
+    flex-grow: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #generation-box{
+    float:left;
+    width: 60%;
+    transform: translate(-15% , 0%);
+  }
+
+  #container {
+    display: flex;
+  }
+  
+  #terminal-panel {
+    width: 450px;
+    left: 20%;
+    transform: translate(-30% , 0%) 
+  }
+
+  #terminal-stdout {
+    margin-top: 10px;
+    height: 600px;
+    padding: 1em;
+    background: #282828;
+    color: #00FF66;
+    border: 1px solid black;
+    outline: none;
+    font-family: monospace;
+  }
+  
+ #terminal-stdin {
+    width: 65%;
+    padding: 1em;
+    background: #282828;
+    color: #00FF66;
+    border: 1px solid black;
+    outline: none;
+    font-family: monospace;
+  }
+
+
+  #icon-panel {
+    margin-left: -28%
+
+  }

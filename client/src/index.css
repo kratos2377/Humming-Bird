@@ -20,32 +20,6 @@ body {
   background: #1f2639;
 }
 
-#container {
-  display: flex;
-}
 
-#terminal-panel {
-  width: 455px;
-  flex-direction: column;
-}
 
-#terminal-stdout, #terminal-stdin {
-  padding: 1em;
-  background: #282828;
-  color: #00FF66;
-  border: 1px solid black;
-  outline: none;
-  font-family: monospace;
-}
 
-#terminal-stdout {
-  flex-grow: 1;
-  border-bottom: none;
-}
-
-#viewport-panel {
-  flex-grow: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
