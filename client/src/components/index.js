@@ -1,6 +1,6 @@
 import * as sim from "lib-simulation-wasm";
-import { Terminal } from "../js/app/terminal";
-import { Viewport } from "../js/app/viewport";
+import { Terminal } from "./js/terminal";
+import { Viewport } from "./js/viewport";
 
 
 

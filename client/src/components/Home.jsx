@@ -7,7 +7,7 @@ const Home = () => {
         <div className="content">
     <Box sx={{width: "100%" , maxWidth: 1000}}>
     <div className='bird'>
-      <img src={bird} width="300" height="300" alt="Your SVG" />
+      <img src={bird} width="300" height="300" alt="Humming Bird" />
     </div>
     </Box>
 
