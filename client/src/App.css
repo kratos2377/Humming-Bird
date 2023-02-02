@@ -38,6 +38,10 @@ body {
   font-family: monospace;
 }
 
+.sim-button{
+  text-align: center;
+  margin: 20;
+}
 #terminal-stdout {
   flex-grow: 1;
   border-bottom: none;

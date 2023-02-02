@@ -15,7 +15,7 @@ const [loadSim , setLoadSim] = useState(false)
   return (
     <>
     {!loadSim ? <Home/> : <Simulation/>}
-    {!loadSim ? <Button  onClick={setSim} variant="outlined">Start Simulation</Button> : <></>}
+    {!loadSim ? <div className="sim-button"><Button  onClick={setSim} variant="outlined">Start Simulation</Button></div> : <></>}
     </>
   )
 }

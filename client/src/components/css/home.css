@@ -1,8 +1,17 @@
 .content{
     
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+
+    margin-bottom: 30 ;
+}
+
+
+.p {
+    width: 100%;
+    text-align: center;
+    margin: 5;
+}
+
+.bird {
+    text-align: center;
+    margin: 10;
 }
