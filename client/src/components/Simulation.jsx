@@ -35,7 +35,7 @@ const Simulation = () => {
     <div id="generation-box">
     <Box sx={{ alignContent:'center', border: 1 , borderColor: "common.white" , marginTop: "20px"}}>
         <Typography sx={{textAlign: 'center' , margin: '5px'}}color="common.white">
-          Generation: 213
+          Generation: <span id="generation-num">  </span>
         </Typography>
       </Box>
     </div>

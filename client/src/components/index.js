@@ -18,7 +18,7 @@ let simulation = new sim.Simulation(sim.Simulation.default_config());
 
 
 let active = true;
-
+let generationNum = 0;
 
 const config = simulation.config();
 
@@ -188,11 +188,14 @@ function execTrain(args) {
 }
 
 function redraw() {
+    document.getElementById("generation-num").textContent = generationNum
     if (active) {
         const stats = simulation.step();
 
         if (stats) {
+            generationNum++;
             terminal.println(stats);
+         
             // console.log("generation data");
             // console.log(stats)
         }
