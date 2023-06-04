@@ -194,14 +194,6 @@ mod test {
             individual(&[1.0, 2.0, 4.0]), // fitness = 7.0
         ];
 
-        // We're running `.evolve()` a few times, so that the
-        // differences between initial and output population are
-        // easier to spot.
-        //
-        // No particilar reason for a number of 10 - this test would
-        // be fine for 5, 20 or even 1000 generations; te only thing
-        // that'd change is the *magnitude* of difference between
-        // initial and output population
         for _ in 0..10 {
             population = ga.evolve(&mut rng, &population).0;
         }
